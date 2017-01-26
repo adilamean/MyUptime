@@ -2,7 +2,7 @@
 
 #Pester tests for MyUptime
 
-#Import-Module MyUptime
+Import-Module MyUptime
 
 InModuleScope MyUptime {
 Describe "Get-MyUptime" {
