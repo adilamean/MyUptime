@@ -61,7 +61,7 @@ Task Test -Depends Init  {
     "`n"
 }
 
-Task Deploy -Depends Build {
+Task Deploy {
     $lines
 
     # Gate deployment
