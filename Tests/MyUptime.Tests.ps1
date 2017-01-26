@@ -2,9 +2,9 @@
 
 #Pester tests for MyUptime
 
-Import-Module MyUptime
+#Import-Module MyUptime
 
-InModuleScope MyUptime {
+InModuleScope MyUptime -Tags Build{
 Describe "Get-MyUptime" {
     
     It "Should run without error by default" {
