@@ -2,14 +2,7 @@
 
 #Pester tests for MyUptime
 
-
-$projectRoot = Resolve-Path "$PSScriptRoot\.."
-$moduleRoot = Split-Path (Resolve-Path "$projectRoot\*\*.psd1")
-$moduleName = Split-Path $moduleRoot -Leaf
-
-Import-Module (Join-Path $moduleRoot "$moduleName.psm1") -force
-
-#Import-Module MyUptime
+Import-Module .\MyUptime.psm1
 
 InModuleScope MyUptime {
 Describe "Get-MyUptime" {
