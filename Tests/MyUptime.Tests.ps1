@@ -5,7 +5,7 @@
 Import-Module .\MyUptime.psm1
 
 InModuleScope MyUptime {
-Describe "Get-MyUptime" {
+Describe "Get-MyUptime"  -Tags Build {
     
     It "Should run without error by default" {
         {Get-MyUptime} | Should Not Throw
